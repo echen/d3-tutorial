@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Example</title>
+  <script type="text/javascript" src="d3/d3.v3.min.js"></script>
+</head>
+
+<body>
+  <div id="viz"></div>
+  <script type="text/javascript">
+    // Add an svg element to the div.
+    var svg = d3.select("#viz").append("svg");
+
+    // Add a circle to the svg element.
+    var circle = svg.append("circle");
+
+    // Center the circle at (50, 50) and set its radius to 30.
+    circle.attr("cx", 50)
+          .attr("cy", 50)
+          .attr("r", 30);
+  </script>
+</body>
+
+</html>
